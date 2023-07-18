@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
+import Link from 'next/link';
 
 const sans = Open_Sans({ subsets: ['latin'] });
 
@@ -16,7 +17,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={sans.className}>
-      <body className={sans.className}>{children}</body>
+      <body className={sans.className}>
+        <header className="  flex justify-between p-2">
+          <Link href={'/'} className="text-2xl font-bold">
+            Jin`s Blog
+          </Link>
+          <nav className="flex justify-evenly">
+            <Link href={'/'} className="mx-2">
+              home
+            </Link>
+            <Link href={'/about'} className="mx-2">
+              about
+            </Link>
+            <Link href={'/posts'} className="mx-2">
+              posts
+            </Link>
+            <Link href={'contact'} className="mx-2">
+              contact
+            </Link>
+          </nav>
+        </header>
+        <main className="">{children}</main>
+        <footer className="bg-black text-white text-md fixed bottom-0 w-full max-w-screen-xl ">
+          footer
+        </footer>
+      </body>
     </html>
   );
 }
