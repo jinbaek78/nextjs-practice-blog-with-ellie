@@ -1,3 +1,3 @@
 export default function PostsPage() {
-  return <div>Posts</div>;
+  return <p>Posts!</p>;
 }
