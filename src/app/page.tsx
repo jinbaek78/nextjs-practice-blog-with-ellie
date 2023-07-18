@@ -1,5 +1,11 @@
-import Image from 'next/image';
+import Hero from '@/components/Hero';
+import Posts from '@/components/Posts';
 
-export default function Home() {
-  return <main>main</main>;
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <Posts sortOption="featured" />
+    </>
+  );
 }
