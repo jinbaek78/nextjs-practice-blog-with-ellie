@@ -7,3 +7,7 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
+
+.react-multi-carousel-track {
+  margin-left: 80px !important;
+}

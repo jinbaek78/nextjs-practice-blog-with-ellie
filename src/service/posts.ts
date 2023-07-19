@@ -10,6 +10,11 @@ export type Post = {
   featured: boolean;
 };
 
+export async function getNotFeaturedPosts(): Promise<Post[]> {
+  return getAllPosts() //
+    .then((posts) => posts.filter((post) => !post.featured));
+}
+
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts() //
     .then((posts) => posts.filter((post) => post.featured));
