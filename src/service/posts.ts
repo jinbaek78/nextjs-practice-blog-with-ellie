@@ -26,3 +26,14 @@ export async function getAllPosts(): Promise<Post[]> {
     .then<Post[]>(JSON.parse)
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 }
+
+export async function getBlogPost(slug: string): Promise<string> {
+  const filePath = path.join(
+    process.cwd(),
+    'public',
+    'data',
+    'posts',
+    `${slug}.md`
+  );
+  return readFile(filePath, 'utf-8');
+}
