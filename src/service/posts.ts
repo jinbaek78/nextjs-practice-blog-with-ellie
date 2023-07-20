@@ -12,6 +12,16 @@ export type Post = {
 
 type PostData = Post & { content: string };
 
+export async function getPreviousNextPost(
+  path: string
+): Promise<(undefined | Post)[]> {
+  return getAllPosts() //
+    .then((posts) => {
+      const index = posts.findIndex((post) => post.path === path);
+      return [posts[index - 1], posts[index + 1]];
+    });
+}
+
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts() //
     .then((posts) => posts.filter((post) => post.featured));
