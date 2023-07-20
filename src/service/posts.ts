@@ -10,7 +10,7 @@ export type Post = {
   featured: boolean;
 };
 
-type PostData = Post & { content: string };
+export type PostData = Post & { content: string };
 
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts() //
