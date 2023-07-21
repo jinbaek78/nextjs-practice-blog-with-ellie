@@ -1,6 +1,7 @@
 import AdjacentPostCard from '@/components/AdjacentPostCard';
 import PostContent from '@/components/PostContent';
-import { getPostData } from '@/service/posts';
+import { Post, getAllPosts, getPostData } from '@/service/posts';
+import { Metadata } from 'next';
 import Image from 'next/image';
 
 type Props = {
@@ -28,4 +29,20 @@ export default async function PostPage({ params: { slug } }: Props) {
       </section>
     </article>
   );
+}
+
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  const posts: Post[] = await getAllPosts();
+  const found = posts.find((post) => post.path === slug);
+
+  if (!found) {
+    return {};
+  }
+
+  return {
+    title: `jin's blog | ${found.title}`,
+    description: found.description,
+  };
 }
