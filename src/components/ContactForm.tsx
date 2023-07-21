@@ -2,8 +2,9 @@
 
 import { ChangeEvent, FormEvent, useState } from 'react';
 import Banner, { BannerData } from './Banner';
+import { sendEmail } from '@/service/mail';
 
-type Form = {
+export type Form = {
   from: string;
   subject: string;
   message: string;
@@ -23,13 +24,14 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(form);
-    setBanner({ message: 'Success!', state: 'success' });
-    // setTimeout(() => {
-    //   setBanner(null);
-    // }, 3000);
+    const result = await sendEmail(form);
+    setBanner(result);
+    setTimeout(() => {
+      setBanner(null);
+    }, 3000);
   };
 
   return (
