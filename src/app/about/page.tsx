@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 const TITLE_CLASS = 'text-2xl font-bold text-gray-800 my-2';
 
 export default function AboutPage() {
+  console.log('AboutPage');
   return (
     <>
       <Hero />

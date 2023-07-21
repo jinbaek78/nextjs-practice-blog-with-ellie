@@ -13,6 +13,7 @@ const LINKS = [
   { icon: <AiFillYoutube />, url: '' },
 ];
 export default function ContactPage() {
+  console.log('ContactPage');
   return (
     <section className="flex flex-col items-center">
       <h2 className="text-3xl font-bold my-2">Contact Me</h2>
