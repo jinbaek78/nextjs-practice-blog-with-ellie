@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterablePosts filters other Posts correctly 1`] = `
+<div>
+  <section
+    class="flex"
+  >
+    <section
+      class="text-center p-4"
+    >
+      <h2
+        class="text-lg font-bold border-b border-sky-500 mb-2"
+      >
+        Category
+      </h2>
+      <ul>
+        <li
+          class="cursor-pointer hover:text-sky-500 text-sky-600"
+        >
+          All Posts
+        </li>
+        <li
+          class="cursor-pointer hover:text-sky-500 false"
+        >
+          my story
+        </li>
+        <li
+          class="cursor-pointer hover:text-sky-500 false"
+        >
+          javascript
+        </li>
+        <li
+          class="cursor-pointer hover:text-sky-500 false"
+        >
+          backend
+        </li>
+        <li
+          class="cursor-pointer hover:text-sky-500 false"
+        >
+          frontend
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+`;

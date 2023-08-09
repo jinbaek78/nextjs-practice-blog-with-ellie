@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostCard renders correctly 1`] = `
+<div>
+  <a
+    href="/posts/review-2021"
+  >
+    <article
+      class="rounded-md overflow-hidden shadow-md hover:shadow-xl"
+    >
+      <img
+        alt="2021년 리뷰"
+        class="w-full"
+        data-nimg="1"
+        decoding="async"
+        height="200"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=640&q=75 2x"
+        style="color: transparent;"
+        width="300"
+      />
+      <div
+        class="flex flex-col items-center p-4"
+      >
+        <time
+          class="self-end text-gray-700"
+        >
+          2021-12-31
+        </time>
+        <h3
+          class="text-lg font-bold"
+        >
+          2021년 리뷰
+        </h3>
+        <p
+          class="w-full truncate text-center"
+        >
+          2021년 한해 동안 배운 기술들, 생각들 정리
+        </p>
+        <span
+          class="text-sm rounded-lg bg-green-100 px-2 my-2"
+        >
+          my story
+        </span>
+      </div>
+    </article>
+  </a>
+</div>
+`;

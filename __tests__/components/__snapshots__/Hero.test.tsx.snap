@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div>
+  <section
+    class="text-center"
+  >
+    <img
+      alt="Picture of the author"
+      class="rounded-full mx-auto"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="250"
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      width="250"
+    />
+    <h2
+      class="text-3xl font-bold mt-2"
+    >
+      Hi, I'm Jin
+    </h2>
+    <h3
+      class="text-xl font-semibold"
+    >
+      Full-stack Engineer
+    </h3>
+    <p>
+      A Person who codes the dream, dream coder Jin
+    </p>
+    <a
+      href="/contact"
+    >
+      <button
+        class="bg-yellow-500 font-bold rounded-xl py-1 px-4 mt-2"
+      >
+        Contact Me
+      </button>
+    </a>
+  </section>
+</div>
+`;

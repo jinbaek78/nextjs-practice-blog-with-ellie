@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostGrid renders correctly 1`] = `
+<DocumentFragment>
+  <ul
+    class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+  >
+    <li />
+    <li />
+    <li />
+    <li />
+    <li />
+    <li />
+    <li />
+    <li />
+    <li />
+  </ul>
+</DocumentFragment>
+`;

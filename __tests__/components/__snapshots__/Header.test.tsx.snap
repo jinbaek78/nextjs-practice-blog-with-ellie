@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div>
+  <header
+    class="flex justify-between items-center p-4"
+  >
+    <a
+      href="/"
+    >
+      <h1
+        class="text-3xl font-bold"
+      >
+        Jin's Blog
+      </h1>
+    </a>
+    <nav
+      class="flex gap-4"
+    >
+      <a
+        href="/"
+      >
+        home
+      </a>
+      <a
+        href="/about"
+      >
+        about
+      </a>
+      <a
+        href="/posts"
+      >
+        posts
+      </a>
+      <a
+        href="/contact"
+      >
+        contact
+      </a>
+    </nav>
+  </header>
+</div>
+`;

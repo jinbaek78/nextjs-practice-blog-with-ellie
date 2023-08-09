@@ -1,0 +1,3 @@
+describe('FeaturedPosts', () => {
+  it('pass', () => {});
+});

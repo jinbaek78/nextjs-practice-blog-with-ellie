@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div>
+  <p
+    class="bg-slate-900 text-white py-2 text-sm text-center"
+  >
+    Don't forget to CODE your DREAM | All Right Reserved.
+  </p>
+</div>
+`;
