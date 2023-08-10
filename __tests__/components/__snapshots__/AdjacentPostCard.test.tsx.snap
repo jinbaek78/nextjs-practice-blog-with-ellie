@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdjacentPostCard renders correctly 1`] = `
+<div>
+  <a
+    class="group relative w-full max-h-56 bg-black"
+    href="/posts/review-2021"
+  >
+    <img
+      alt="2021년 리뷰"
+      class="w-full opacity-40"
+      data-nimg="1"
+      decoding="async"
+      height="100"
+      loading="lazy"
+      src="/_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=384&q=75"
+      srcset="/_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fposts%2Freview-2021.png&w=384&q=75 2x"
+      style="color: transparent;"
+      width="150"
+    />
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-around items-center  text-white"
+    >
+      <svg
+        class="text-5xl m-4 text-yellow-300 transition-all group-hover:text-6xl mx-10"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 448 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+        />
+      </svg>
+      <div
+        class="w-full text-center"
+      >
+        <h3
+          class="text-3xl font-bold"
+        >
+          2021년 리뷰
+        </h3>
+        <p
+          class="font-bold"
+        >
+          2021년 한해 동안 배운 기술들, 생각들 정리
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+`;

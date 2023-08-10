@@ -37,6 +37,7 @@ export default function ContactForm() {
         setForm(DEFAULT_FORM);
       })
       .catch(({ message }) => {
+        console.log('got error message: ', message);
         setBanner({
           message,
           state: 'error',
@@ -45,6 +46,7 @@ export default function ContactForm() {
       .finally(() => {
         setTimeout(() => {
           setBanner(null);
+          console.log('setTimeout called');
         }, 3000);
       });
   };
@@ -63,6 +65,7 @@ export default function ContactForm() {
           className="text-black"
           type="email"
           id="from"
+          data-testid="from"
           name="from"
           required
           autoFocus
@@ -77,6 +80,7 @@ export default function ContactForm() {
           className="text-black"
           type="text"
           id="subject"
+          data-testid="subject"
           name="subject"
           required
           value={form.subject}
@@ -90,6 +94,7 @@ export default function ContactForm() {
           className="text-black"
           rows={10}
           id="message"
+          data-testid="message"
           name="message"
           required
           value={form.message}

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders correctly 1`] = `
+<div>
+  <section
+    class="w-full max-w-md "
+  >
+    <form
+      class="w-full  flex flex-col gap-2 m-4 p-4 bg-slate-700 rounded-xl text-white"
+    >
+      <label
+        class="font-semibold"
+        for="from"
+      >
+        Your Email
+      </label>
+      <input
+        class="text-black"
+        data-testid="from"
+        id="from"
+        name="from"
+        required=""
+        type="email"
+        value=""
+      />
+      <label
+        class="font-semibold"
+        for="subject"
+      >
+        Subject
+      </label>
+      <input
+        class="text-black"
+        data-testid="subject"
+        id="subject"
+        name="subject"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        class="font-semibold"
+        for="message"
+      >
+        Message
+      </label>
+      <textarea
+        class="text-black"
+        data-testid="message"
+        id="message"
+        name="message"
+        required=""
+        rows="10"
+      />
+      <button
+        class="bg-yellow-300 text-black font-bold hover:bg-yellow-400"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </section>
+</div>
+`;

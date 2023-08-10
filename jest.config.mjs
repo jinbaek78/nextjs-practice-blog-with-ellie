@@ -19,7 +19,9 @@ const config = {
     '^.+\\.(js|jsx|ts|tsx|mjs)$': ['babel-jest', { presets: ['next/babel'] }],
   },
   moduleNameMapper: {
+    // react: 'next/dist/compiled/react/cjs/react.development.js',
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
+    '^@/service/(.*)$': '<rootDir>/src/service/$1',
     '^@/app/(.*)$': '<rootDir>/app/$1',
     //
   },
