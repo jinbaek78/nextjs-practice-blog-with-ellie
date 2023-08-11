@@ -14,6 +14,7 @@ export default function AdjacentPostCard({
   post: { path, title, description },
   type,
 }: Props) {
+  console.log('AdjacentPostCard called');
   return (
     <Link
       href={`/posts/${path}`}

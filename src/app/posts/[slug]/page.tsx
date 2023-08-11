@@ -17,7 +17,7 @@ export async function generateMetadata({ params: { slug } }: Props) {
 }
 
 export default async function PostPage({ params: { slug } }: Props) {
-  console.log('PostPage Slug');
+  console.log('PostPage Slug: ', slug);
   const post = await getPostData(slug);
   const { path, title, prev, next } = post;
 

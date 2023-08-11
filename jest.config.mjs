@@ -20,9 +20,12 @@ const config = {
   },
   moduleNameMapper: {
     // react: 'next/dist/compiled/react/cjs/react.development.js',
+    // react: 'node_modules/react/cjs/react.development.js',
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '^@/service/(.*)$': '<rootDir>/src/service/$1',
-    '^@/app/(.*)$': '<rootDir>/app/$1',
+    '^@/app/(.*)$': '<rootDir>/src/app/$1',
+    '^@/tests/(.*)$': '<rootDir>/src/tests/$1',
+    '^@/mocks/(.*)$': '<rootDir>/src/mocks/$1',
     //
   },
 };

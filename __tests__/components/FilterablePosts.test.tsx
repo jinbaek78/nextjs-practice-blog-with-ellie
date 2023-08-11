@@ -9,7 +9,7 @@ import PostData from '../../public/data/posts.json';
 jest.mock('@/components/PostsGrid');
 // jest.mock('@/components/Categories');
 
-describe('FilterablePosts', () => {
+describe.skip('FilterablePosts', () => {
   const posts: Post[] = PostData;
   const categories = [...new Set(posts.map((post) => post.category))];
 

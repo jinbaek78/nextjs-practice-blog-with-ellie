@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPage renders 1`] = `
+<div>
+  <section
+    class="bg-gray-100 shadow-lg p-8 m-8 text-center"
+  >
+    <h2
+      class="text-2xl font-bold text-gray-800 my-2"
+    >
+      Who AM I?
+    </h2>
+    <p>
+      A FullStack developer who loves development so much 
+      <br />
+      I am making an web application including human and design
+    </p>
+    <h2
+      class="text-2xl font-bold text-gray-800 my-2"
+    >
+      Career
+    </h2>
+    <p>
+      Googler (-Now)
+      <br />
+      maceBook (-2019) 
+      <br />
+      samjun (-2016)
+       
+    </p>
+    <h2
+      class="text-2xl font-bold text-gray-800 my-2"
+    >
+      Skills
+    </h2>
+    <p>
+      React, Vue, Node
+      <br />
+      Git, Clean code
+      <br />
+      VS Code, MongoDB
+    </p>
+  </section>
+</div>
+`;

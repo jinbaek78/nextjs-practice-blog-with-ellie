@@ -6,6 +6,7 @@ type Props = {
   post: PostData;
 };
 export default function PostContent({ post }: Props) {
+  console.log('PostContent called');
   const { title, content, path, description, date } = post;
   return (
     <section className="flex flex-col p-4">
@@ -14,7 +15,7 @@ export default function PostContent({ post }: Props) {
         <p className="font-semibold ml-2">{date.toString()}</p>
       </div>
       <h1 className="text-4xl font-bold">{title}</h1>
-      <p className="text-xl font-bold">{description}/</p>
+      <p className="text-xl font-bold">{description}</p>
       <div className="w-44 border-2 border-sky-600 mt-4 mb-8"></div>
       <MarkdownViewer content={content} />
     </section>

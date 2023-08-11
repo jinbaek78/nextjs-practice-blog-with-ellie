@@ -12,6 +12,7 @@ type Props = {
   categories: string[];
 };
 export default function FilterablePosts({ posts, categories }: Props) {
+  console.log('FilterablePosts called');
   const [selected, setSelected] = useState(ALL_POSTS);
   const filtered =
     selected === ALL_POSTS

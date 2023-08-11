@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'send an email to jin',
 };
 
-const LINKS = [
+export const LINKS = [
   { icon: <AiFillGithub />, url: '' },
   { icon: <AiFillLinkedin />, url: '' },
   { icon: <AiFillYoutube />, url: '' },

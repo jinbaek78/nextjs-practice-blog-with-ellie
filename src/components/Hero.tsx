@@ -3,6 +3,7 @@ import Link from 'next/link';
 import profileImage from '../../public/images/profile.jpeg';
 
 export default function Hero() {
+  console.log('Hero called');
   return (
     <section className="text-center">
       <Image
